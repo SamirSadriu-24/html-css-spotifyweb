@@ -4,17 +4,20 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", 'Helvetica Neue', sans-serif;
 }
 
 .container{
     height:100vh;
     display: flex;
+    flex-direction:row;
+    width: 100vw;
 }
 .menu-container{
     color: #a3a3a3;
     background-color: black;
-    width: 20%;
+    width: 20vw;
+    height: 90vh;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
@@ -108,4 +111,154 @@
     width: 20px;
     border-radius:50%;
     margin-bottom: 10px;
+}
+
+/* Parte album centrale */
+.general-container{
+        background-color: #141821;
+}
+.call-to-action{
+    background-color: transparent;
+    height:10%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.call-to-action a{
+    margin-right: 10px;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    border:solid 1px white;
+    padding:10px;
+    border-radius:20px;
+    font-size:12px;
+    position:fixed;
+}
+
+.music-container{
+    background-color: #141821;
+    height: 80vh;
+    overflow-y: auto;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.categories ul{
+    height: 20px;
+    margin:10px 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size:15px;
+    gap:5px;
+    list-style-type: none;
+}
+
+.categories ul li a{
+    text-decoration: none;
+    color:#75787d;
+}
+
+.categories ul li a hr{
+    display:none;
+}
+
+.categories ul li a:hover hr{
+    display:block;
+    border-radius:2px;
+    border:2px solid greenyellow;
+    width: 30%;
+    margin: 0 auto;
+    color:greenyellow;
+}
+
+.section-container{
+    margin:0px 20px;
+    padding-top:30px;
+}
+
+.section-title{
+    color:white;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.card-container{
+    display:flex;
+    flex-wrap: wrap;
+    color:white;
+    gap:20px;
+}
+
+.card , .card_suggest{
+    width:calc(( 100% / 6 ) - (100px / 6));
+    text-align: center;
+    position:relative;
+}
+.card img, .card_suggest img{
+    width:100%;
+    padding-bottom:10px;
+
+}
+
+.card h4, .card_suggest h4{
+    font-size:15px;
+    padding-bottom:10px;
+}
+
+.card i{
+    display:none;
+    position:absolute;
+    font-size:100px;
+    text-align: center;
+    bottom:100px;
+}
+
+.card:hover i , .card_suggest:hover i{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#080b1275;
+    background-size:cover;
+    height:196px;
+    width:196px;
+    text-align:center
+}
+
+.card span, .card_suggest span{
+    font-size:12px;
+    color:lightgrey;
+}
+
+.section-container #sub-title{
+    font-size:smaller;
+    color:white;
+}
+
+.section-container .card_suggest{
+    margin-top:40px;
+}
+
+
+.card_suggest i{
+    display:none;
+    position:absolute;
+    font-size:100px;
+    text-align: center;
+    bottom:100px;
+}
+
+.card_suggest:hover i{
+    transform: translateY(60px);
+}
+
+.section-container.bottom  img{
+    border-radius: 50%;
+}
+
+.section-container.bottom .card_suggest:hover i{
+    border-radius: 50%;
 }
