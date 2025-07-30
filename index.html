@@ -18,7 +18,7 @@
             <section class="menu-container">
                 <div class="menu-section">
                     <img src="img/logo.svg" alt="Logo-spotify">
-                    <a href="#"><img src="img/home.svg" alt="home-icon"> Home</a>
+                    <a href="#"><img src="img/home.svg" alt="home-icon"><span>Home</span></a>
                     <a href="#"><img src="img/search.svg" alt="search-icon">Cerca <a>
                     <a href="#"><img src="img/libreria.svg" alt="search-icon">La tua libreria </a>
                     <h2>PLAYLIST</h2>
@@ -58,44 +58,58 @@
                     </nav>
                     <section class="section-container">
                         <h2 class="section-title">Recently Played</h2>
+
                         <div class="card-container">
                             <div class="card">
-                                <img src="img/metal_lifting.jpg" alt="heavy_metal">
-                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="image-wrapper">
+                                    <img src="img/metal_lifting.jpg" alt="heavy_metal">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h4>Heavy Metal</h4>
                                 <span>Subtitle</span>
                             </div>
                             <div class="card">
-                                <img src="img/stranger.jpeg" alt="stranger_things">
-                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="image-wrapper">
+                                    <img src="img/stranger.jpeg" alt="stranger_things">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h4>Stranger Thigs vol. 1 (a Netlifx Original Series Soundtrack)</h4>
                                 <span>Kayle Dixon & Michael Stein</span>
                             </div>
                             <div class="card">
-                                <img src="img/aquietplace.jpeg" alt="quiet_place">
-                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="image-wrapper">
+                                    <img src="img/aquietplace.jpeg" alt="quiet_place">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h4>A Quiet Place</h4>
                                 <span>Subtitle</span>
                             </div>
                             <div class="card">
-                                <img src="img/cure.jpeg" alt="cure">
-                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="image-wrapper">
+                                    <img src="img/cure.jpeg" alt="cure">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h4>A Cure for welness</h4>
                                 <span>Subtitle</span>
                             </div>
                             <div class="card">
-                                <img src="img/metal_lifting.jpg" alt="heavy_metal">
-                                <i class="fa-regular fa-circle-play"></i>
-                                <h4>Heavy Metal</h4>
+                                <div class="image-wrapper">
+                                    <img src="img/split.jpeg" alt="split">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <h4>Split</h4>
                                 <span>Subtitle</span>
                             </div>
                             <div class="card">
-                                <img src="img/sinister.jpeg" alt="Sinister">
-                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="image-wrapper">
+                                    <img src="img/sinister.jpeg" alt="Sinister">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>    
                                 <h4>Sinister</h4>
                                 <span>Subtitle</span>
                             </div>
-                        </div>    
+                        </div>   
+
                     </section>
 
                     <section class="section-container">
@@ -103,38 +117,45 @@
                         <span id="sub-title">Più ascolti, pù accurati saranno i suggerimenti</span>
 
                         <div class="card-container">
-                            <div class="card_suggest">
-                                <img src="img/radar.jpeg" alt="radar">
-                                <i class="fa-regular fa-circle-play"></i>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="img/radar.jpeg" alt="radar">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h4>Release Radar</h4>
                             </div>
 
-                            <div class="card_suggest">
-                                <img src="img/mixdaily.jpeg" alt="Mixdaily">
-                                <i class="fa-regular fa-circle-play"></i>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="img/mixdaily.jpeg" alt="Mixdaily">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h4>Daily Mix 1</h4>
                             </div>
-
                         </div>
+
                     </section>
-                    
+
                     <section class="section-container bottom">
                         <h2 class="section-title">Artisti Più Popolari</h2>
                         <span id="sub-title">Più ascolti, pù accurati saranno i suggerimenti</span>
 
                         <div class="card-container">
-                            <div class="card_suggest">
-                                <img src="img/youg.jpeg" alt="lanadelray">
-                                <i class="fa-regular fa-circle-play"></i>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="img/youg.jpeg" alt="lanadelray">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h4>Release Radar</h4>
                             </div>
 
-                            <div class="card_suggest">
-                                <img src="img/einaudi.jpeg" alt="einaudi">
-                                <i class="fa-regular fa-circle-play"></i>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="img/einaudi.jpeg" alt="einaudi">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <h4>Ludovico Einaudi</h4>
                             </div>
-
                         </div>
 
                     </section>
@@ -158,19 +179,19 @@
                             </figcaption>
                         </figure>
                         <div class="icon">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-regular fa-folder"></i>
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-regular fa-folder"></i></a> 
                         </div>
                 </div>
             </div>
             
             <div class="container-mid">
                 <div class="icon">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward"></i>
-                    <i class="fa-regular fa-circle-play"></i>
-                    <i class="fa-solid fa-forward"></i>
-                    <i class="fa-solid fa-rotate-right"></i>
+                    <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    <a href="#"><i class="fa-solid fa-backward"></i></a>
+                    <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                    <a href="#"><i class="fa-solid fa-forward"></i></a>
+                    <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
                 </div>
                 <div class="progress-bar">
                     <span>0.35</span>
@@ -181,9 +202,9 @@
 
             <div class="container-dx">
                 <div class="icon">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-desktop"></i>
-                    <i class="fa-solid fa-volume-low"></i>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#"><i class="fa-solid fa-desktop"></i></a>
+                    <a href="#"><i class="fa-solid fa-volume-low"></i></a>
                 </div>
                 <progress id="file_1" value="10" max="100"></progress>
             </div>
