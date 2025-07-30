@@ -289,34 +289,72 @@ a:hover{
 }
 
 footer{
-    display:fixed;
-    width: 100vw;
-    height: 10vh;
     background-color: rgb(41, 41, 41);
     z-index: 100;
 }
-footer figure{
+.container-footer{
+    display:flex;
+    align-items: center;
+    gap:170px;
+    justify-content: space-evenly;
+}
+
+.container-sx figure{
+    display:flex;
+    height: 73px;
+    padding:10px;
+    align-items: center;
+    flex-direction:row;
+}
+.music-bottom{
     display:flex;
     align-items: center;
 }
 
-figcaption{
-    color:lightgrey;
+figure img{
+    height: 60px;
+    padding:10px;
 }
 
-figcaption:hover {
+figcaption{
     color:white;
 }
 
-footer figure figcaption h6{
+figcaption span{
+    color:grey;
+    font-size:10px;
+}
+
+.icon i{
+    color:lightgrey;
+    margin-left:10px;
+}
+
+.container-mid{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+
+}
+.container-mid .icon{
+    font-size:20px;
+}
+
+.progress-bar{
+    display:flex;
+    gap:10px;
+    color:white;
     font-size:12px;
-
+    font-weight: 700;
 }
-figcaption span {
-    font-size: 10px;
+#file{
+    color:green;
+    width: 600px;
 }
 
-footer figure img{
-    width: 4%;
-    padding:10px;
+.container-dx{
+    display:flex;
+    padding:20px;
+    gap:10px;
 }

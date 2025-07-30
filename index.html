@@ -33,8 +33,7 @@
                     </ul>
                 </div>
                 <div class="last-section">
-                    <a href="#" class="download"> <img src="img/download.svg" alt="download"> Installa app
-                    </a>
+                    <a href="#" class="download"> <img src="img/download.svg" alt="download"> Installa app</a>
                     <hr>
                     <a id="user"><img src="img/profile.svg" alt="profilepc"> John Doe</a>
                 </div>
@@ -148,13 +147,47 @@
     </main>
 
     <footer>
-        <figure>
-            <img src="img/sinister.jpeg" alt="sinister-sx">
-            <figcaption>
-                <h6>Sinister</h6>
-                <span>Nome Brano</span>
-            </figcaption>
-        </figure>
+        <div class="container-footer">
+            <div class="container-sx">
+                    <div class="music-bottom">
+                        <figure>
+                            <img src="img/sinister.jpeg" alt="sinister">
+                            <figcaption>
+                                <h6>Sinister</h6>
+                                <span>Brano Nome</span>
+                            </figcaption>
+                        </figure>
+                        <div class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-folder"></i>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="container-mid">
+                <div class="icon">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="progress-bar">
+                    <span>0.35</span>
+                    <progress id="file" value="35" max="435"> 32% </progress>
+                    <span>4.35</span>
+                </div>
+            </div>
+
+            <div class="container-dx">
+                <div class="icon">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-low"></i>
+                </div>
+                <progress id="file_1" value="10" max="100"></progress>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
