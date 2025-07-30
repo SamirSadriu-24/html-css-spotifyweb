@@ -13,6 +13,8 @@
     flex-direction:row;
     width: 99vw;
 }
+
+
 .menu-container{
     color: #a3a3a3;
     background-color: black;
@@ -25,6 +27,9 @@
     padding-top:20px;
 }
 
+#Logo-small{
+    display:none;
+}
 
 .menu-container img{
     height: 30px;
@@ -57,11 +62,21 @@
     margin-top:20px;
 
 }
+
+.button{
+    display:flex;
+    gap: 10px;
+}
 .add-playlist{
     margin-top:10px;
 }
 
-.add-playlist span{
+.add-playlist #create-playlist{
+    position:relative;
+}
+
+.add-playlist #span-button{
+    display:block;
     background-color: #a3a3a3;
     color:black;
     width: 35px;
@@ -227,26 +242,42 @@
     position:relative;
 }
 
+
 .image-wrapper{
     position: relative;
     width: 100%;
 }
 
 .image-wrapper img {
-  width: 100%;
-  display: block;
-  padding-bottom:10px;
+    width: 100%;
+    display: block;
+    padding-bottom:10px;
 }
 
+
 .image-wrapper i {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  color: white;
-  z-index: 2;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.image-wrapper:hover i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background: rgb(0, 0, 0, 0.5);
+}
+
+.section-container.bottom .image-wrapper i{
+    border-radius: 50%;
+    height: 100%;
 }
 
 .card h4{
@@ -356,9 +387,7 @@ figcaption span{
 }
 
 
-.image-wrapper:hover i {
-  display: block;
-}
+
 /* VERSIONI RESPONSIVE */
 
 @media screen and (max-width: 878px){
@@ -462,6 +491,28 @@ figcaption span{
     }
 }
 
-@media screen and(max-width:552){
-    
+@media screen and (max-width: 552px) {
+
+    .menu-container{
+        width: 10vw;
+        align-items: center;
+    }
+    .menu-container  span, #Logo-normale{
+        display: none;
+    }
+
+    #Logo-small{
+        display:block;
+    }
+
+    hr{
+        color:black;
+        border:black;
+    }
+    .call-to-action{
+        left: 30%;
+    }
+    .general-container{
+        width: 100vw;
+    }
 }
