@@ -25,6 +25,7 @@
     padding-top:20px;
 }
 
+
 .menu-container img{
     height: 30px;
     margin-bottom:30px;
@@ -37,6 +38,10 @@
     color:#a3a3a3;
     gap:10px;
     font-size:14px;
+}
+
+a:hover{
+    color:white;
 }
 
 .menu-container a img{
@@ -87,6 +92,10 @@
     font-size:12px;
 }
 
+.last-section a:hover{
+    color:white;
+}
+
 .last-section a img{
     height: 20px;
     margin:0;
@@ -114,21 +123,34 @@
 }
 
 /* Parte album centrale */
-.general-container{
-        background-color: #141821;
+
+
+
+.music-container{
+    background-color: #141821;
+    height: 90vh;
+    overflow-y: auto;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    position:relative;
 }
+
 .call-to-action{
-    background-color: transparent;
-    height:10%;
+    width: 85vw;
+    background-color: rgb(20, 24, 33, 0.7);
+    height:100px;
+    padding:40px 20px;
     display:flex;
     justify-content: flex-end;
     align-items: center;
+    position:fixed;
+    z-index: 200;
 }
 
 .call-to-action a{
-    margin-right: 10px;
     text-decoration: none;
-    color:white;
+    color:lightgrey;
     text-align: center;
     border:solid 1px white;
     padding:10px;
@@ -137,23 +159,23 @@
     position:fixed;
 }
 
-.music-container{
-    background-color: #141821;
-    height: 80vh;
-    overflow-y: auto;
-    display:flex;
-    flex-direction: column;
-    gap:10px;
+.call-to-action:hover a{
+    color:white;
+}
+
+.categories{
+    padding-top:100px;
 }
 
 .categories ul{
+    margin-top:40px;
     height: 20px;
     margin:10px 0px;
     display:flex;
     flex-direction: row;
     justify-content: center;
     font-size:15px;
-    gap:5px;
+    gap:10px;
     list-style-type: none;
 }
 
@@ -166,6 +188,9 @@
     display:none;
 }
 
+.categories ul li a:hover{
+    color:white;
+}
 .categories ul li a:hover hr{
     display:block;
     border-radius:2px;
