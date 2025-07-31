@@ -8,18 +8,19 @@
 }
 
 .container{
-    height:90vh;
+    /* height:90vh; */
     display: flex;
     flex-direction:row;
-    width: 99vw;
+    /* width: 99vw; */
+    position:relative;
 }
 
 
 .menu-container{
-    color: #a3a3a3;
+    /* color: #a3a3a3; */
     background-color: black;
     width: 20vw;
-    height: 90vh;
+    height: 100vh;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
@@ -73,6 +74,9 @@
 
 .add-playlist #create-playlist{
     position:relative;
+}
+.add-playlist:hover #create-playlist{
+    border:none;
 }
 
 .add-playlist #span-button{
@@ -142,10 +146,9 @@
 /* Parte album centrale */
 
 
-
 .music-container{
     background-color: #141821;
-    height: 90vh;
+    height: 100vh;
     overflow-y: auto;
     display:flex;
     flex-direction: column;
@@ -163,6 +166,7 @@
     align-items: center;
     position:fixed;
     z-index: 200;
+    margin-bottom:40px;
 }
 
 .call-to-action a{
@@ -178,6 +182,7 @@
 
 .call-to-action:hover a{
     color:white;
+    animation: pulse 1s forwards;
 }
 
 .categories{
@@ -305,10 +310,11 @@
 
 footer{
     background-color: rgb(41, 41, 41);
-    position:fixed;
+    position:sticky;
+    bottom:0;
     z-index: 100;
+    min-height: 10vh;
     width: 99vw;
-    height: 10vh;
 }
 .container-footer{
     display:flex;
@@ -322,6 +328,7 @@ footer{
     padding:10px;
     align-items: center;
     flex-direction:row;
+    flex-grow: 0;
 }
 .music-bottom{
     display:flex;
@@ -353,7 +360,7 @@ figcaption span{
     flex-direction: column;
     align-items: center;
     gap:10px;
-    flex-grow: 1;
+    flex-grow: 2;
 
 }
 .container-mid .icon{
@@ -382,8 +389,24 @@ figcaption span{
     display:flex;
     flex-direction: row;
 }
-.icon:hover a{
-    border:none;
+
+a:hover i{
+    animation:pulse 1s forwards;
+    font-weight: 700;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 
@@ -393,7 +416,7 @@ figcaption span{
 @media screen and (max-width: 878px){
 
     .container{
-        height: 90vh;
+        height: 100vh;
     }
 
     .menu-container{
@@ -405,7 +428,7 @@ figcaption span{
     }
 
     .call-to-action{
-        width: 70vw;
+        width: 80vw;
     }
 
     .card{
@@ -418,12 +441,10 @@ figcaption span{
 
     }
 
+
 }
 
 @media screen and (max-width:693px) {
-    .container{
-        width: 100%;
-    }
 
     .menu-container{
         width: 35vw;
@@ -465,7 +486,6 @@ figcaption span{
         justify-content: space-between;
         width:100%;
         height: auto;
-        margin-top:15px;
         font-size:14px;
     }
     .container-sx{
@@ -492,10 +512,16 @@ figcaption span{
 }
 
 @media screen and (max-width: 552px) {
+    .container{
+        height: 100vh;
+    }
 
     .menu-container{
         width: 10vw;
+        height: 100vh;
         align-items: center;
+        margin-bottom:0;
+        padding-bottom:0;
     }
     .menu-container  span, #Logo-normale{
         display: none;
@@ -509,10 +535,55 @@ figcaption span{
         color:black;
         border:black;
     }
-    .call-to-action{
-        left: 30%;
-    }
+
     .general-container{
         width: 100vw;
+    }
+
+    .container-sx{
+        flex-shrink: 1;
+    }
+    .container-dx{
+        flex-shrink: 0;
+    }
+
+    .music-container{
+        height: 100vh;
+        width: 90vw;
+    }
+
+    .container-footer{
+        align-items:center;
+        justify-content: 33%;
+        width:80vh;
+        font-size:12px;
+        gap:0px;
+    }
+
+    .container-sx{
+        display:flex;
+        flex-grow: 0;
+        flex-shrink: 2;
+    }
+    .container-mid{
+        flex-grow: 0;
+        flex-shrink: 1;
+        
+    }
+
+    .container-dx{
+        padding:20px;
+        gap:0px;
+    }
+    .container-mid .icon{
+        font-size: 12px;
+    }
+    #file_1{
+        font-size:2px;
+    }
+
+    .container-dx .icon{
+        font-size: 12px;
+        width: 70%;
     }
 }
