@@ -15,7 +15,7 @@
     position:relative;
 }
 
-
+     /* BARRA DI DESTRA */
 .menu-container{
     /* color: #a3a3a3; */
     background-color: black;
@@ -156,6 +156,7 @@
     position:relative;
 }
 
+/* banner pubblicità premium */
 .call-to-action{
     width: 80%;
     background-color: rgb(20, 24, 33, 0.7);
@@ -185,6 +186,7 @@
     animation: pulse 1s forwards;
 }
 
+/* Link Menu alto */
 .categories{
     padding-top:100px;
 }
@@ -222,6 +224,9 @@
     margin: 0 auto;
     color:greenyellow;
 }
+
+
+/* CONTENITORE DELLE VARIE CANZONI ECC... */
 
 .section-container{
     margin:0px 20px;
@@ -280,6 +285,7 @@
    background: rgb(0, 0, 0, 0.5);
 }
 
+/* contenitore con artisti con immagine tonda */
 .section-container.bottom .image-wrapper i{
     border-radius: 50%;
     height: 100%;
@@ -307,6 +313,7 @@
     border-radius: 50%;
 }
 
+/* FOOTER */
 
 footer{
     background-color: rgb(41, 41, 41);
@@ -322,6 +329,7 @@ footer{
     justify-content: space-evenly;
 }
 
+/* elemento di sinistra */
 .container-sx figure{
     display:flex;
     height: 73px;
@@ -355,6 +363,7 @@ figcaption span{
     margin-left:10px;
 }
 
+/* elemento centrale */
 .container-mid{
     display:flex;
     flex-direction: column;
@@ -378,6 +387,7 @@ figcaption span{
     color:green;
 }
 
+/* elemento di destra */
 .container-dx{
     display:flex;
     padding:20px;
@@ -413,6 +423,8 @@ a:hover i{
 
 /* VERSIONI RESPONSIVE */
 
+/* IPAD */
+
 @media screen and (max-width: 878px){
 
     .container{
@@ -444,6 +456,7 @@ a:hover i{
 
 }
 
+/* Tablet 2? */
 @media screen and (max-width:693px) {
 
     .menu-container{
@@ -510,6 +523,8 @@ a:hover i{
         font-size: 14px;
     }
 }
+
+/* Cellulare */
 
 @media screen and (max-width: 552px) {
     .container{
@@ -587,3 +602,4 @@ a:hover i{
         width: 70%;
     }
 }
+
